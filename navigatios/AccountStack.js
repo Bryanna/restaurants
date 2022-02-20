@@ -7,12 +7,12 @@ const Stack = createStackNavigator()
 
 export default function AccountStack() {
   return (
-      <Stack.createStackNavigator>
+      <Stack.Navigator>
           <Stack.Screen
-             name="account" 
+             name="accounts" 
              component={Account} 
              options={{title: "Cuenta"}} 
           />
-      </Stack.createStackNavigator>      
+      </Stack.Navigator>      
   )
 }

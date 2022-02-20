@@ -1,18 +1,19 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
-import Account from '../screens/Restaurants'
+import Restaurants from '../screens/Restaurants'
 
 const Stack = createStackNavigator() 
 
 export default function RestaurantsStack() {
   return (
-      <Stack.createStackNavigator>
+      <Stack.Navigator>
           <Stack.Screen
-             name="restaurants" 
+             name="restaurant" 
              component={Restaurants} 
-             options={{title: "Restaurantes"}} 
+             options={{ title: "Restaurantes" }} 
           />
-      </Stack.createStackNavigator>      
+      </Stack.Navigator>      
   )
 }
+

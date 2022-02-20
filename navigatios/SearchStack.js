@@ -7,12 +7,12 @@ const Stack = createStackNavigator()
 
 export default function SearchStack() {
   return (
-      <Stack.createStackNavigator>
+      <Stack.Navigator>
           <Stack.Screen
-             name="search" 
+             name="searchs" 
              component={Search} 
              options={{title: "Buscar"}} 
           />
-      </Stack.createStackNavigator>      
+      </Stack.Navigator>      
   )
 }
